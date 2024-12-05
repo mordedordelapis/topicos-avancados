@@ -1,0 +1,138 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 137px;
+
+}
+
+.palavras-chave {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    position: fixed;
+    top: -100vh;
+    left: -100vw;
+    font-size: 1px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead tr {
+    background-color: #ddd;
+    border-bottom: 2px solid #fff;
+}
+
+table th,
+table td {
+    padding: 2px 10px;
+}
+
+.esconder {
+    display: none;
+}
+
+.bto.bto-padrao,
+a.bto.bto-padrao,
+button.bto.bto-padrao {
+    color: #285E92 !important;
+    border-color: #285E92;
+    background: #FFFFFF;
+}
+
+.searchbox {
+    background-color: #F2F2F2;
+    border: 2px solid #E9E9E9;
+    opacity: 1;
+    width: calc(100% - 88px);
+    height: auto;
+    padding: 8px;
+    display: inline-block;
+    margin-left: 0px;
+    border-radius: 3px;
+    min-width: calc(320px - 88px);
+    margin-bottom: 10px;
+}
+
+.max-width {
+    max-width: 991px;
+    padding-top: 20px;
+}
+
+.searchbox-text {
+    width: calc(100% - 34px);
+    background-color: #f2f2f2;
+    border: 0px none;
+
+    color: #3f3f3f;
+    font-size: 1em !important;
+}
+
+.searchbutton {
+    width: 16px;
+    height: 16px;
+    border: 0px;
+    color: #979797;
+    position: relative;
+    display: inline-block;
+    top: -2px;
+    right: 4px;
+}
+.badge.bg-primary {
+    color: white;
+    background-color: #005e9f !important;
+}
+.badge.bg-warning {
+    
+    background-color: #ff9600 !important;
+}
+.btn-group,
+.btn-group-vertical {
+    height: 45px;
+    top: -2px;
+}
+
+.btn-group .btn {
+    padding: 0.575rem .75rem;
+}
+.badge {
+    float: right;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.topo {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 10px;
+    background-color: white;
+    z-index: 999;
+}
+#lista, #porgrupos {
+    padding-bottom: 100px;
+}
+.bto-titulo {
+    background-color: #33a047;
+    border: 2px solid #33a047;
+    box-shadow: 0px 4px 1px #00000029;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.25s;
+    color: white;
+  }
+
+.bto-titulo:hover {
+    background-color: #f2f2f2;
+    transition: 0.25s;
+    color: black;
+}

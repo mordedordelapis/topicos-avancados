@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Espie</title>
+    <link rel="stylesheet" href="/faq/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/faq/css/estilos.css">
+</head>
+
+<body>
+    <div class="topo">
+        <div class="container max-width">
+
+            <div class="text-center">
+                <div class="row row-eq-height">
+                    <div class="col-12 d-flex align-items-center col-md-3">
+                        <p class="text-center">
+                            <img src="/faq/imagens/logo.png" class="img-fluid" style="max-width: calc(250px - 30px);"
+                                alt="">
+                        </p>
+                    </div>
+                    <div class="col-12 d-flex align-items-center col-md-9">
+                        <div class="input-group mb-3">
+                            <input type="text" id="filtro" name="buscarpornome" class="form-control"
+                                placeholder="Digite o assunto..." aria-label="Busca por assunto"
+                                aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button id="buscar" data-target="colaboradores" class="btn btn-outline-secondary"
+                                    type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container max-width">
+
+
+        <div id="lista">
+
+            <div class="item" data-grupo="Básico">
+                <button type="button" data-toggle="modal" data-target="#m1" class="bto-titulo titulo">
+                    O que é o
+                    Espie? <span class="badge bg-primary">Professor</span> <span class="badge bg-primary">Aluno</span>
+                    <span class="badge bg-warning">Gerenciador de conteúdo</span>
+                </button>
+                <div class="palavras-chave">Para que serve o espie?</div>
+                <div class="palavras-chave">Básico</div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="porgrupos" class="d-none">
+
+    </div>
+
+
+    <!-- Modais com os conteúdos -->
+
+
+    <div class="modal fade" id="m1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">O que é o Espie?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        O Espie (Espaço de Inovação em Educação) é um portal <i>on-line</i>, criado com o intuito de
+                        compartilhar objetos educacionais, sejam eles vídeos, <i>podcasts</i>, animações, simuladores,
+                        arquivos em PDF, <em>e-books</em> e <em>hotsites</em>, entre todas as unidades do Senac. O
+                        portal tem como objetivo apoiar as aulas tanto no espaço físico-presencial quanto na sala de
+                        aula virtual.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/faq/js/jquery-3.5.1.min.js"></script>
+    <script src="/faq/js/popper.min.js"></script>
+    <script src="/faq/js/bootstrap.min.js"></script>
+    <script src="/faq/js/all.min.js"></script>
+    <script src="/faq/js/busca.js"></script>
+    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
+    <script>
+        var ht = new HT({
+            token: "36854e0d0afdcae2905519ff0b2c73e7"
+        });
+    </script>
+
+</body>
+
+</html>
