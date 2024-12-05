@@ -13,6 +13,19 @@ $("#buscar").click(function () {
     }
 });
 
+$("#menu-da-busca").click(function (){
+    $(this).addClass("d-none");
+    $("#fechar-busca").removeClass("d-none");
+    $("#busca-container-menu").removeClass("d-none");
+    $("body").addClass("busca-aberta");
+});
+
+$("#fechar-busca").click(function (){
+    $(this).addClass("d-none");
+    $("#busca-container-menu").addClass("d-none")
+    $("#menu-da-busca").removeClass("d-none")
+    $("body").removeClass("busca-aberta")
+});
 
 $("label[title='Exibir em lista']").click(function () {
     $("#filtro").removeClass("validar-grupos");

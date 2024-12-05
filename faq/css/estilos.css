@@ -8,10 +8,12 @@ body {
     padding-top: 137px;
 
 }
-
-@media only screen and (max-width: 768px){
-    body {
-        padding-top: 200px;
+body.busca-aberta{
+    padding-top: 200px;
+}
+@media only screen and (min-width: 769px){
+    body.busca-aberta {
+        padding-top: 137px;
     
     }
     
@@ -160,4 +162,23 @@ button.bto.bto-padrao {
 .bto-titulo:hover > .bg-light {
     background-color: #33a047 !important;
     color: white;
+}
+
+#titulo-do-trabalho {
+    font-weight: 600;
+    font-size: 2.04em;
+  }
+
+@media only screen and (max-width: 768px){
+    .botoes-de-apoio {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-top: 1px solid #c1c1c1;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    
 }

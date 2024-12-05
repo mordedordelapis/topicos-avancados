@@ -16,13 +16,22 @@
 
             <div class="text-center">
                 <div class="row row-eq-height">
-                    <div class="col-12 d-flex align-items-center col-md-3">
+                    <div class="col-9 d-flex align-items-center col-md-3">
                         <p class="text-center">
                             <img src="faq/imagens/logo.png" class="img-fluid" style="max-width: calc(250px - 30px);"
                                 alt="">
                         </p>
+
                     </div>
-                    <div class="col-12 d-flex align-items-center col-md-9">
+                    <div class="col-3 d-flex text-right align-items-center d-md-none">
+                        <button type="button" id="menu-da-busca" class="btn" style="margin-left: auto; order: 2">
+                            <i class="fas fa-2x fa-bars"></i>
+                        </button>
+                        <button type="button" id="fechar-busca" class="btn d-none" style="margin-left: auto; order: 2">
+                            <i class="fas fa-2x fa-times"></i>
+                        </button>
+                    </div>
+                    <div id="busca-container-menu" class="col-12 d-md-flex align-items-center col-md-9 d-none">
                         <div class="input-group mb-3">
                             <input type="text" id="filtro" name="buscarpornome" class="form-control"
                                 placeholder="Digite o assunto..." aria-label="Busca por assunto"
@@ -42,6 +51,7 @@
     </div>
 
     <div class="container max-width">
+        <h1 id="titulo-do-trabalho" class="text-md-center pt-3">Aqui vai o título do trabalho</h1>
         <br>
         <p class="text-center">Clique ou toque abaixo, para visualizar o conteúdo.</p>
         <br>
@@ -118,16 +128,24 @@
 
         </div>
 
-        <div class="botoes-de-apoio">
-            <button type="button" class="btn btn-dark d-block text-center" style="max-width: 550px;">
-                Referências
-            </button>
-        </div>
+
     </div>
 
-
-    <div id="porgrupos" class="d-none">
-
+    <div class="botoes-de-apoio">
+        <div class="container max-width" style="padding-top: 0px !important">
+            <div class="row">
+                <div class="col-6">
+                    <button type="button" class="btn btn-dark w-100">
+                        Referências
+                    </button>
+                </div>
+                <div class="col-6">
+                    <button type="button" class="btn btn-dark w-100">
+                        Créditos
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -275,12 +293,7 @@
     <script src="faq/js/bootstrap.min.js"></script>
     <script src="faq/js/all.min.js"></script>
     <script src="faq/js/busca.js"></script>
-    <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
-    <script>
-        var ht = new HT({
-            token: "36854e0d0afdcae2905519ff0b2c73e7"
-        });
-    </script>
+
 
 </body>
 
