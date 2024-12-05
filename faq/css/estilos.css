@@ -3,9 +3,18 @@ body {
     height: 100%;
 }
 
+
 body {
     padding-top: 137px;
 
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        padding-top: 200px;
+    
+    }
+    
 }
 
 .palavras-chave {
@@ -81,6 +90,9 @@ button.bto.bto-padrao {
     top: -2px;
     right: 4px;
 }
+.badge.bg-light {
+    color: black;
+}
 .badge.bg-primary {
     color: white;
     background-color: #005e9f !important;
@@ -135,4 +147,9 @@ button.bto.bto-padrao {
     background-color: #f2f2f2;
     transition: 0.25s;
     color: black;
+}
+
+.bto-titulo:hover > .bg-light {
+    background-color: #33a047 !important;
+    color: white;
 }
