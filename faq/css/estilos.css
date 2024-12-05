@@ -114,7 +114,11 @@ button.bto.bto-padrao {
 .btn-group .btn {
     padding: 0.575rem .75rem;
 }
-.badge {
+.badge-primary {
+    background-color: #33a047 !important;
+    color: white !important
+}
+.badge:not(.modal-body .badge) {
     float: right;
     margin-left: 10px;
     margin-top: 3px;
