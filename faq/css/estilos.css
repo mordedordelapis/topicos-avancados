@@ -207,3 +207,9 @@ button.bto.bto-padrao {
     color: #1f6e2d;
     font-weight: bold;
   }
+
+  .modal-body hr {
+    position: relative;
+    left: -20px;
+    width: calc(100% + 40px);
+  }
